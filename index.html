@@ -612,26 +612,29 @@
     </div>
   </div>
 
-  <!-- Slide 2: The Problem -->
+  <!-- Slide 2: Anker's AI Now -->
   <div class="slide">
-    <div class="slide-label">现状</div>
-    <h2>大多数企业的 AI 落地<br>停在了<span class="highlight-orange">"接模型"</span>这一步</h2>
-    <div class="cards cards-3" style="margin-top:36px;">
-      <div class="card">
-        <span class="card-icon">1</span>
-        <h4>接 API 就完事</h4>
-        <p>接入 GPT/Claude API，加个 Chat 界面，宣布"AI 赋能"。没有数据飞轮，没有持续进化。</p>
+    <div class="slide-label">安克 AI 现状</div>
+    <h2>安克已经走在前面：<br><span class="highlight">AIME 平台</span> + <span class="highlight-green">300+ Agent</span></h2>
+    <div class="cards cards-3" style="margin-top:32px;">
+      <div class="card card-accent">
+        <span class="card-icon">&#9889;</span>
+        <h4>智能广告系统</h4>
+        <p>覆盖 <strong style="color:var(--text);">90%+</strong> 站内广告花费，<strong style="color:var(--text);">20,000+</strong> 广告活动，<strong style="color:var(--text);">20%</strong> 实现 AI 全自动托管，SPA ACoS 降低 10%。</p>
       </div>
-      <div class="card">
-        <span class="card-icon">2</span>
-        <h4>RAG 即答案</h4>
-        <p>文档切片 + 向量检索 + LLM 回答。但 RAG 是无状态的 -- 每次对话从零开始，不记得昨天的决策。</p>
+      <div class="card card-green">
+        <span class="card-icon">&#128172;</span>
+        <h4>智能客服</h4>
+        <p>AI 解决率超 <strong style="color:var(--text);">70%</strong>，270+ 渠道整合，工单处理从 30 分钟降到 5 分钟，退货率降低 40%+。</p>
       </div>
-      <div class="card">
-        <span class="card-icon">3</span>
-        <h4>Agent 是新名词</h4>
-        <p>把几个工具串起来叫 Agent。但没有决策上下文，Agent 就是"第一天上班的聪明实习生"。</p>
+      <div class="card card-orange">
+        <span class="card-icon">&#128187;</span>
+        <h4>AI 研发 + 战略</h4>
+        <p>AI 代码采纳率超 <strong style="color:var(--text);">50%</strong>。飞书 AI 助手让战略分析从 7 天缩短到 <strong style="color:var(--text);">1 天</strong>，提效 85%。</p>
       </div>
+    </div>
+    <div class="quote" style="margin-top:24px;">
+      <p>基础很好。但 300 个 Agent 各自为战，<strong style="color:var(--orange);">缺少共享的组织记忆</strong> -- 每个 Agent 都像第一天上班的聪明实习生。</p>
     </div>
   </div>
 
@@ -699,41 +702,41 @@
       <div class="arch-layer">
         <div class="arch-label">应用层</div>
         <div class="arch-bar core">
-          <span class="arch-tag tag-core">ANKER</span>
-          广告投放 Agent / 数据洞察 Agent / 竞品分析 Agent / 运营助手
+          <span class="arch-tag tag-core">AIME 300+</span>
+          广告投放 Agent / 智能客服 / 数据洞察 / 战略分析 / 代码审核
         </div>
       </div>
       <div class="arch-layer">
-        <div class="arch-label">记忆层</div>
-        <div class="arch-bar build">
-          <span class="arch-tag tag-build">BUILD</span>
+        <div class="arch-label" style="color:var(--orange);">记忆层 !</div>
+        <div class="arch-bar build" style="border-style:dashed;">
+          <span class="arch-tag tag-build">待建</span>
           Knowledge Graph / Decision Trace / Context Store / 时序知识演化
         </div>
       </div>
       <div class="arch-layer">
         <div class="arch-label">编排层</div>
         <div class="arch-bar build">
-          <span class="arch-tag tag-build">BUILD</span>
-          AI Gateway / Agent Runtime / MCP 工具编排 / RAG Pipeline
+          <span class="arch-tag tag-build">已有+增强</span>
+          AIME 编排 + AI Gateway 增强 / MCP 工具标准化 / RAG Pipeline
         </div>
       </div>
       <div class="arch-layer">
         <div class="arch-label">模型层</div>
         <div class="arch-bar buy">
-          <span class="arch-tag tag-buy">BUY</span>
-          GPT / Claude / Gemini / DeepSeek / Qwen -- 多供应商并行，避免锁定
+          <span class="arch-tag tag-buy">已有</span>
+          Bedrock Claude / 通义千问 / SageMaker -- 多供应商并行
         </div>
       </div>
       <div class="arch-layer">
         <div class="arch-label">基础设施</div>
         <div class="arch-bar buy">
-          <span class="arch-tag tag-buy">BUY</span>
-          AWS / 阿里云 / 向量数据库 / 图数据库
+          <span class="arch-tag tag-buy">已有</span>
+          AWS (Bedrock/SageMaker/Connect) / 阿里云 (PAI/通义)
         </div>
       </div>
     </div>
     <div style="margin-top:28px; font-size:14px; color:var(--text-dim); max-width:700px;">
-      模型层随时可以换供应商（LLM 在商品化），但记忆层是安克的<strong style="color:var(--accent3);">运营 DNA</strong> -- 十年广告经验、品类洞察、决策历史，外包给第三方等于把核心资产锁在别人的黑箱里。
+      安克的模型层和应用层已经很强。<strong style="color:var(--orange);">缺的是中间的记忆层</strong> -- 十年广告经验、品类洞察、决策历史，目前散落在各个 Agent 的独立会话里，没有结构化沉淀。
     </div>
   </div>
 
@@ -789,36 +792,33 @@
     <div class="cards cards-3" style="margin-top:32px;">
       <div class="card card-accent">
         <span class="card-icon">&#9889;</span>
-        <h4>智能投放 Agent</h4>
-        <p><strong style="color:var(--text);">输入</strong>: "Nano 系列在欧洲市场推新品"</p>
-        <p style="margin-top:8px;"><strong style="color:var(--text);">Agent 行为</strong>:</p>
-        <p>1. 调取历史 Nano 欧洲投放 Decision Trace</p>
-        <p>2. 参考去年同期品类竞争态势</p>
-        <p>3. 生成投放策略 + 预算分配</p>
-        <p>4. 执行投放 + 实时归因反馈</p>
-        <p style="margin-top:8px;"><strong style="color:var(--accent);">关键</strong>: 有历史决策记忆，不从零开始</p>
+        <h4>智能投放 Agent 升级</h4>
+        <p><strong style="color:var(--text);">现状</strong>: 已有 20,000+ 广告活动，20% AI 全自动托管</p>
+        <p style="margin-top:8px;"><strong style="color:var(--text);">+Memory 后</strong>:</p>
+        <p>1. 调取 Nano 欧洲历史投放 Decision Trace</p>
+        <p>2. "去年黑五低出价丢失流量" → 自动规避</p>
+        <p>3. 新品策略继承老品经验，不从零试错</p>
+        <p style="margin-top:8px;"><strong style="color:var(--accent);">目标</strong>: AI 托管从 20% → 60%+</p>
       </div>
       <div class="card card-green">
         <span class="card-icon">&#128270;</span>
-        <h4>数据洞察 Agent</h4>
-        <p><strong style="color:var(--text);">输入</strong>: "分析 Q1 北美充电品类趋势"</p>
-        <p style="margin-top:8px;"><strong style="color:var(--text);">Agent 行为</strong>:</p>
-        <p>1. 自然语言 -> SQL 查询多数据源</p>
-        <p>2. 对比知识图谱中的历史趋势</p>
-        <p>3. 关联竞品动态和市场事件</p>
-        <p>4. 生成洞察报告 + 建议动作</p>
-        <p style="margin-top:8px;"><strong style="color:var(--accent3);">关键</strong>: 不只检索数据，还关联上下文</p>
+        <h4>供应链风控 Agent</h4>
+        <p><strong style="color:var(--text);">教训</strong>: 2025 电芯召回 71 万+115 万台</p>
+        <p style="margin-top:8px;"><strong style="color:var(--text);">+Memory 后</strong>:</p>
+        <p>1. 供应商原材料变更 → 自动关联历史质量事件</p>
+        <p>2. 交叉比对全球各区域质检数据</p>
+        <p>3. 异常模式匹配 → 提前预警</p>
+        <p style="margin-top:8px;"><strong style="color:var(--accent3);">目标</strong>: 从"事后召回"到"事前拦截"</p>
       </div>
       <div class="card card-orange">
         <span class="card-icon">&#127760;</span>
         <h4>全球运营 Agent</h4>
-        <p><strong style="color:var(--text);">输入</strong>: "日本市场有什么异常信号？"</p>
-        <p style="margin-top:8px;"><strong style="color:var(--text);">Agent 行为</strong>:</p>
-        <p>1. 联邦化查询日本本地数据节点</p>
-        <p>2. 比对全球其他市场模式</p>
-        <p>3. 追溯类似异常的历史处理方式</p>
-        <p>4. 推荐应对策略 + 风险评估</p>
-        <p style="margin-top:8px;"><strong style="color:var(--orange);">关键</strong>: 数据主权合规 + 全局视野</p>
+        <p><strong style="color:var(--text);">场景</strong>: 96%+ 营收来自海外，3 大品牌全球运营</p>
+        <p style="margin-top:8px;"><strong style="color:var(--text);">+Memory 后</strong>:</p>
+        <p>1. "日本市场异常" → 追溯历史类似事件处理方式</p>
+        <p>2. 跨市场经验迁移（欧洲策略 → 东南亚适配）</p>
+        <p>3. 联邦化查询，数据不出境，洞察全局可见</p>
+        <p style="margin-top:8px;"><strong style="color:var(--orange);">关键</strong>: H 股上市后数据合规更加刚需</p>
       </div>
     </div>
   </div>
@@ -826,66 +826,66 @@
   <!-- Slide 7: Global data sovereignty -->
   <div class="slide">
     <div class="slide-label">全球化</div>
-    <h2>数据主权分治：<span class="highlight">联邦化架构</span></h2>
-    <p class="subtitle">安克在全球销售，但数据不能全球流通。解法：全局路由 + 本地处理。</p>
+    <h2>H 股上市后的刚需：<span class="highlight">联邦化架构</span></h2>
+    <p class="subtitle">安克 96% 营收来自海外，正在冲刺港股 A+H 双上市。数据合规不再是可选项。</p>
     <div class="cards cards-2" style="margin-top:32px;">
       <div class="card">
-        <h4 style="color:var(--accent);">Global Control Plane</h4>
+        <h4 style="color:var(--accent);">Global Control Plane (AWS)</h4>
         <p style="margin-top:12px;"><strong style="color:var(--text);">功能</strong>: 统一查询路由、全局策略下发、聚合洞察汇总</p>
-        <p style="margin-top:8px;"><strong style="color:var(--text);">特点</strong>: 只看到聚合数据和洞察摘要，不接触原始数据</p>
-        <p style="margin-top:8px;"><strong style="color:var(--text);">模型</strong>: GPT / Claude / Gemini（海外节点）</p>
+        <p style="margin-top:8px;"><strong style="color:var(--text);">模型</strong>: Bedrock Claude / GPT / Gemini（海外节点）</p>
+        <p style="margin-top:8px;"><strong style="color:var(--text);">已有</strong>: SageMaker 广告模型 + Connect 客服系统</p>
       </div>
       <div class="card">
-        <h4 style="color:var(--accent3);">China Data Node</h4>
+        <h4 style="color:var(--accent3);">China Data Node (阿里云)</h4>
         <p style="margin-top:12px;"><strong style="color:var(--text);">功能</strong>: 中国区数据存储、本地 Agent 推理、PIPL 合规</p>
-        <p style="margin-top:8px;"><strong style="color:var(--text);">特点</strong>: 数据不出境，只返回洞察结果（聚合/摘要）</p>
-        <p style="margin-top:8px;"><strong style="color:var(--text);">模型</strong>: 通义千问 / DeepSeek / 智谱 GLM-4（国产部署）</p>
+        <p style="margin-top:8px;"><strong style="color:var(--text);">模型</strong>: 通义千问 / DeepSeek（已接入 soundcore 耳机）</p>
+        <p style="margin-top:8px;"><strong style="color:var(--text);">已有</strong>: 阿里云 PAI + MCP 工具链</p>
       </div>
     </div>
     <div class="quote" style="margin-top:28px;">
       <p>Federated RAG: 全局路由查询 -> 本地节点处理 -> 返回洞察不传原始数据</p>
-      <p class="source">合规 + 低延迟 + 全局视野，三者兼得</p>
+      <p class="source">港股上市合规 + PIPL 数据不出境 + 全局 Agent 协作，三者兼得</p>
     </div>
   </div>
 
   <!-- Slide 8: Roadmap -->
   <div class="slide">
     <div class="slide-label">路线图</div>
-    <h2>分三步走，<span class="highlight-green">先验证再扩展</span></h2>
+    <h2>在 AIME 基础上，<span class="highlight-green">三步补齐记忆层</span></h2>
     <div class="timeline">
       <div class="phase" style="border-color:var(--accent);">
         <div class="phase-num" style="color:var(--accent);">01</div>
-        <div class="phase-period" style="color:var(--accent);">Q2-Q3 2026 / 基础</div>
-        <h4>AI 中台 + 试点场景</h4>
+        <div class="phase-period" style="color:var(--accent);">Q2-Q3 2026 / 记忆层 MVP</div>
+        <h4>广告域 Decision Trace 试点</h4>
         <ul>
-          <li style="--dot:var(--accent);">部署 AI Gateway（多模型路由）</li>
-          <li style="--dot:var(--accent);">搭建广告投放 Knowledge Graph</li>
-          <li style="--dot:var(--accent);">MCP 工具层接入现有数据平台</li>
-          <li style="--dot:var(--accent);">1 个品类试点智能投放 Agent</li>
+          <li style="--dot:var(--accent);">在 AIME 现有 Agent 上叠加记忆能力</li>
+          <li style="--dot:var(--accent);">广告投放 Decision Trace 结构化沉淀</li>
+          <li style="--dot:var(--accent);">MCP 标准化接入现有数据平台</li>
+          <li style="--dot:var(--accent);">1 个品类验证：AI 托管率 20% → 40%</li>
         </ul>
         <style>.phase:nth-child(1) li::before { background: var(--accent); }</style>
       </div>
       <div class="phase" style="border-color:var(--accent3);">
         <div class="phase-num" style="color:var(--accent3);">02</div>
-        <div class="phase-period" style="color:var(--accent3);">Q4 2026 - Q1 2027 / Agent 化</div>
-        <h4>Decision Trace + 多场景</h4>
+        <div class="phase-period" style="color:var(--accent3);">Q4 2026 - Q1 2027 / 多域扩展</div>
+        <h4>供应链 + 运营 + 联邦化</h4>
         <ul>
-          <li>启动投放决策历史结构化</li>
-          <li>数据洞察 Agent 上线</li>
-          <li>中国/海外双节点 Federated RAG</li>
-          <li>扩展到 3-5 个品类线</li>
+          <li>供应链风控 Agent（电芯质量追溯）</li>
+          <li>Knowledge Graph 扩展到 3 大品牌</li>
+          <li>AWS/阿里云 双节点 Federated RAG</li>
+          <li>H 股上市后数据合规架构就位</li>
         </ul>
         <style>.phase:nth-child(2) li::before { background: var(--accent3); }</style>
       </div>
       <div class="phase" style="border-color:var(--orange);">
         <div class="phase-num" style="color:var(--orange);">03</div>
-        <div class="phase-period" style="color:var(--orange);">2027 H2 / 自治运营</div>
-        <h4>记忆飞轮 + 全面覆盖</h4>
+        <div class="phase-period" style="color:var(--orange);">2027 H2 / 记忆飞轮</div>
+        <h4>组织记忆 + 自我进化</h4>
         <ul>
-          <li>Agent 决策自动沉淀为新记忆</li>
-          <li>全品类线 Agent 覆盖</li>
-          <li>Context Graph 扩展到全运营链</li>
-          <li>AI 决策质量持续自我提升</li>
+          <li>300+ Agent 共享组织记忆</li>
+          <li>决策 → 沉淀 → 学习 → 优化闭环</li>
+          <li>新员工的 Agent 继承老员工经验</li>
+          <li>安克十年运营智慧成为 AI 原生资产</li>
         </ul>
         <style>.phase:nth-child(3) li::before { background: var(--orange); }</style>
       </div>
@@ -898,24 +898,24 @@
     <h2>为什么我能做这件事</h2>
     <div class="cards cards-2" style="margin-top:32px;">
       <div class="card card-accent">
-        <h4>AI Gateway -- 已验证</h4>
-        <p>自建多模型路由，GPT/Claude/Gemini/DeepSeek 统一 API，3s 自动 Failover，日均 10K+ 调用，生产环境稳定运行。</p>
+        <h4>多模型编排 -- 对齐 AIME</h4>
+        <p>自建 AI Gateway，GPT/Claude/Gemini/DeepSeek 统一路由 + 3s Failover。与安克 Bedrock + 通义千问双栈架构同源。</p>
       </div>
       <div class="card card-green">
-        <h4>Agent Runtime -- 已验证</h4>
-        <p>MCP 协议 + Tool Calling 编排，支撑 80,000 全球用户。从 coding agent V0 迭代到 V6 多 Agent 自治团队。</p>
+        <h4>Agent Runtime -- 对齐 300+ Agent</h4>
+        <p>MCP 协议 + Tool Calling 编排，支撑 80,000 用户。atos 开源 19 MCP tools，可直接扩展 AIME Agent 工具链。</p>
       </div>
       <div class="card card-orange">
-        <h4>Knowledge Architecture -- 已验证</h4>
-        <p>DDD + CQRS + Event Sourcing 架构（da2 开源框架），RAG 全链路，Data Agent NL->SQL->可视化。</p>
+        <h4>记忆架构 -- 补齐缺失层</h4>
+        <p>DDD + CQRS + Event Sourcing（da2 开源框架）天然适配 Decision Trace。RAG + Data Agent 全链路已验证。</p>
       </div>
       <div class="card">
-        <h4>Team OS -- 已验证</h4>
-        <p>atos 开源（npm + 19 MCP tools），5-Agent 团队日常运作，异步信箱 + 任务管理 + SOP 流程。用 AI 管理 AI。</p>
+        <h4>多 Agent 协作 -- 规模化经验</h4>
+        <p>5-Agent 团队日常运作，异步信箱 + 任务管理 + SOP。安克 300 Agent 协作治理需要同样的架构思维。</p>
       </div>
     </div>
     <div style="margin-top:24px; font-size:15px; color:var(--text-dim);">
-      这四个能力恰好覆盖 Buy Model, Build Memory 架构的每一层。不是概念验证，是生产环境跑出来的。
+      安克需要的不是从零建 AI 平台的人 -- AIME 已经很好。需要的是<strong style="color:var(--accent3);">补齐记忆层、让 300 个 Agent 从各自为战变成共享智慧</strong>的架构师。
     </div>
   </div>
 
